@@ -41,13 +41,8 @@
     </style>
     <script type="text/javascript">
         function letter() {
-            var result = [];
-            var start = 'A';
-            var stop = 'P';
-            for (var idx = start.charCodeAt(0), end = stop.charCodeAt(0); idx <= end; ++idx) {
-                result.push(String.fromCharCode(idx));
-            }
-            return result[Math.floor(Math.random() * 16)];
+            var letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P'];
+            return letters[Math.floor(Math.random() * items.length)];
         }
 
         function number() {
